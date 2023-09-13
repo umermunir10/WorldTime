@@ -22,7 +22,7 @@ class WorldTime {
     Response response = await get(uri);
     Map data = jsonDecode(response.body);
     print(data);
-
+    print('object');
     // get properties from data
     final String? dateTime = data['datetime'];
     final String offSet = data['utc_offset'].substring(1, 3);
